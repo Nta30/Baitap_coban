@@ -13,10 +13,11 @@
   int main(){
   	int i,n,S=0;
   	int x;
+        printf("Nhap vao n:");
   	scanf("%d",&n);
   	for(i=1;i<=n;i++){
   		x=tinhgiaithua(i);
   		S+=pow(-1,i-1)*x;
 	  }
-	  printf("%d",S);
+	  printf("result=%d",S);
   } 
