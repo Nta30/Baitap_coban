@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+ int main(){
+ 	int i,n,gt=1;
+ 	float x;
+ 	printf("Nhap vao n va x:");
+ 	scanf("%d%f",&n,&x);
+ 	float s=x;
+ 	for(i=1;i<n;i++){
+ 		gt=gt*(2*i+1)*(2*i);
+ 		s+=(float) pow(-1,i)*pow(x,2*i)/gt;
+	 }
+	 printf("Result=%f",s);
+ }
