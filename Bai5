@@ -1,0 +1,14 @@
+#include<stdio.h>
+// 100 trau an 100 bo co
+// trau dung an 5, trau nam an 3, trau gia 3 con 1 bo
+ int main(){
+ 	int x,y,z;//x la so trau dung, y la trau nam, z la trau gia
+ 	for(x=1;x<=20;x++){
+ 		for(y=1;y<=33;y++){
+ 			z=100-x-y;
+ 			if(x+y+z==100&&15*x+9*y+z==300){
+ 				printf("Trau dung:%d  Trau nam:%d  Trau gia:%d\n",x,y,z);
+			 }
+		 }
+	 }
+ } 
