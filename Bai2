@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+  int tinhgiaithua(int n){
+  	int i,gt=1;
+  	if(n==0){
+  		return 1;
+	  }
+	for(i=1;i<=n;i++){
+		gt=gt*i;
+	}
+	return gt;  
+  }
+  int main(){
+  	int i,n,S=0;
+  	int x;
+  	scanf("%d",&n);
+  	for(i=1;i<=n;i++){
+  		x=tinhgiaithua(i);
+  		S+=pow(-1,i-1)*x;
+	  }
+	  printf("%d",S);
+  } 
